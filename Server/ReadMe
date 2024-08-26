@@ -1,0 +1,11 @@
+First Create Project from Scratch
+npm i body-parser bcrypt cors dotenv gridfs-stream multer multer-gridfs-storage helmet morgan jsonwebtoken mongoose
+"type": "module", for using import instead of require
+Body-parser is a middleware in Node.js used for parsing incoming request bodies. It allows you to extract the entire request body from an HTTP request and exposes it on the req.body property.
+Helmet is a popular security middleware package for Node.js and Express.js applications. It helps protect your application from various web vulnerabilities by setting appropriate HTTP headers.
+
+# Storage of File
+
+When a file is uploaded, multer will use this storage configuration to determine where to save the file and what name to give it.
+The destination option specifies that uploaded files should be saved in the ./public directory. This directory is typically accessible to the web server and can be used to serve files to clients.
+The filename option specifies that the uploaded file should be saved with its original filename. This is a common approach, but you can customize the filename if needed.
